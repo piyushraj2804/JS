@@ -19,12 +19,16 @@ const Jsuser={
 
 
 Jsuser.email="pr9033"
-Object.freeze(Jsuser)
+//Object.freeze(Jsuser)
 
 
 Jsuser.greeting = function(){
     console.log("Hello JS user");
 }
-
+Jsuser.greeting2 = function(){
+    console.log(`Hello JS user,${this.name}`);
+}
 console.log(Jsuser.greeting())
+console.log(Jsuser.greeting2())
+
 
